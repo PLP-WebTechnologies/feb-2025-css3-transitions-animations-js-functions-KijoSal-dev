@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Web Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1 class="fade-in">Welcome to Animated Magic ✨</h1>
+    <p class="fade-in delay-1">Crafted with CSS & JavaScript delight.</p>
+    <button id="ctaButton">Animate Me!</button>
+  </header>
+
+  <main>
+    <section class="preferences">
+      <h2>🎛️ Animation Settings</h2>
+      <label>
+        <input type="checkbox" id="toggleAnimations" />
+        Enable Fancy Animations
+      </label>
+    </section>
+
+    <section class="showcase">
+      <h2>💡 Animation Showcase</h2>
+      <div class="card scale-on-hover">Scale Hover</div>
+      <div class="card float-loop">Floating Loop</div>
+      <svg viewBox="0 0 100 10" class="path-draw">
+        <path d="M 0 5 Q 25 0 50 5 T 100 5" stroke="#9b87f5" stroke-width="2" fill="transparent" />
+      </svg>
+
+      <div id="local-storage-display">
+        Stored Value: <span id="stored-value"></span>
+    </div>
+
+    <input type="text" id="data-input" placeholder="Enter data to store">
+    <button id="store-data">Store Data</button>
+    <button id="clear-data">clear Data</button>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
